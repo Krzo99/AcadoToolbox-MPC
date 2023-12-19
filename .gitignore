@@ -1,2 +1,5 @@
 .asv
-
+*.cpp
+*.txt
+ACADO/export_*
+ACADO/*_RUN.*
