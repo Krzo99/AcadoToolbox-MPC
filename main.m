@@ -16,8 +16,9 @@ T = 500;
 N_Obstacles = 5;
 
 RECOMPILE_ACADO = false;    % Set to 1 everytime you change N or dt.
+ACADOToolkit_location = "H:\Projects\ACADOtoolkit";
 if RECOMPILE_ACADO
-    ACADO_main(N, dt);
+    ACADO_main(N, dt, ACADOToolkit_location);
     error("done, disable recompile.")
 end
 

@@ -1,4 +1,4 @@
-function ACADO_main(N, dt)
+function ACADO_main(N, dt, ACADOToolkit_location)
 
 cd ./ACADO/
 
@@ -131,10 +131,10 @@ mpc.exportCode( 'export_MPC' );
 switch solver_selection
     case 1
         disp('qpOASES exported!');
-        copyfile('/home/domen/Documents/ACADOtoolkit/external_packages/qpoases','export_MPC/qpoases', 'f')
+        copyfile(ACADOToolkit_location + '/external_packages/qpoases','export_MPC/qpoases', 'f')
     case 2
         disp('QP_QPDUNES exported!');
-        copyfile('/home/domen/Documents/ACADOtoolkit/external_packages/qpdunes', 'export_MPC/qpdunes', 'f')
+        copyfile(ACADOToolkit_location + '/external_packages/qpdunes', 'export_MPC/qpdunes', 'f')
     otherwise
         disp('Please select a solver!');
 end

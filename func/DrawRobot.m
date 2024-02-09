@@ -16,6 +16,6 @@ function robotDrawing = DrawRobot(robot)
 
     robotDrawing(1) = plot(polyshape(M(1, 1:end-1), M(2, 1:end-1)));
     robotDrawing(1).FaceColor = "r";
-    robotDrawing(2) = plot([robot.x M(1, end)], [robot.y M(2, end)], 'b', LineWidth=3);
+    robotDrawing(2) = plot([robot.x M(1, end)], [robot.y M(2, end)], 'b', 'LineWidth', 3);
     
 end    
